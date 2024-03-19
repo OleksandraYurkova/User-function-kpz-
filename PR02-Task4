@@ -1,0 +1,20 @@
+#Task4
+print("Task4")
+x = float(input("Введіть значення для x: "))
+y = float(input("Введіть значення для y: "))
+
+if x == y:
+    print("Введені числа повинні бути різними")
+else:
+    if x < y:
+        x = (x + y) / 2
+    else:
+        y = (x + y) / 2
+    
+    if x < y:
+        y = 2 * x * y
+    else:
+        x = 2 * x * y
+
+    print(f"Замінене значення для x: {x}")
+    print(f"Замінене значення для y: {y}")
