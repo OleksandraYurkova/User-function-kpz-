@@ -1,0 +1,26 @@
+#Task1 
+def calculate_power(number):
+    if number >= 0:
+        return number ** 2
+    else:
+        return number ** 4
+
+def main():
+    # Увести три дійсних числа з клавіатури
+    num1 = float(input("Введіть перше число: "))
+    num2 = float(input("Введіть друге число: "))
+    num3 = float(input("Введіть третє число: "))
+
+    # Викликати функцію для обчислення степеня
+    result1 = calculate_power(num1)
+    result2 = calculate_power(num2)
+    result3 = calculate_power(num3)
+
+    print(f"Результат для першого числа: {result1}")
+    print(f"Результат для другого числа: {result2}")
+    print(f"Результат для третього числа: {result3}")
+    
+print("Task1")
+main()
+
+
