@@ -1,0 +1,25 @@
+#Task2
+import math
+
+def distance(x1, y1, x2, y2):
+    return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+def closer_point(x1, y1, x2, y2):
+    distance_to_origin1 = distance(0, 0, x1, y1)
+    distance_to_origin2 = distance(0, 0, x2, y2)
+    
+    if distance_to_origin1 < distance_to_origin2:
+        return "Точка A ближче до початку координат."
+    elif distance_to_origin1 > distance_to_origin2:
+        return "Точка B ближче до початку координат."
+    else:
+        return "Точки розташовані на однаковій відстані до початку координат."
+
+print("\nTask2")
+x1 = float(input("Введіть координату x для точки A: "))
+x2 = float(input("Введіть координату x для точки B: "))
+y1 = float(input("Введіть координату y для точки A: "))
+y2 = float(input("Введіть координату y для точки B: "))
+
+result = closer_point(x1, x2, y1, y2)
+print(result)
