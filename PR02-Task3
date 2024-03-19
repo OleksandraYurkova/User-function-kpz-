@@ -1,0 +1,16 @@
+#Task3
+def check_triangle(angle1, angle2):
+    angle3 = 180 - angle1 - angle2  
+
+    if angle1 + angle2 + angle3 == 180 and (angle1 == 90 or angle2 == 90 or angle3 == 90):
+        return "Трикутник є прямокутним."
+    elif angle1 + angle2 < 180:
+        return "Такий трикутник існує, але не є прямокутним."
+    else:
+        return "Такий трикутник не існує."
+print("Task3")
+angle1 = float(input("Введіть величину першого кута трикутника (у градусах): "))
+angle2 = float(input("Введіть величину другого кута трикутника (у градусах): "))
+
+result = check_triangle(angle1, angle2)
+print(result)
