@@ -1,0 +1,17 @@
+#Task6
+def replace_numbers():
+    print("Task6")
+    a = int(input("Введіть перше ціле число a: "))
+    b = int(input("Введіть друге ціле число b: "))
+
+    if a != b:
+        max_number = max(a, b)
+        a = max_number
+        b = max_number
+    else:
+        a = 0
+        b = 0
+    print("Результат заміни чисел:")
+    print("a =", a)
+    print("b =", b)
+replace_numbers()
