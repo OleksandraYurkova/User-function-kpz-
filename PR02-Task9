@@ -1,0 +1,17 @@
+#Task9
+def count_integers(a, b, c):
+    count = 0
+    if isinstance(a, int):
+        count += 1
+    if isinstance(b, int):
+        count += 1
+    if isinstance(c, int):
+        count += 1
+    return count
+print("Task9")
+a = input("Введіть значення a: ")
+b = input("Введіть значення b: ")
+c = input("Введіть значення c: ")
+
+result = count_integers(a, b, c)
+print(f"Кількість цілих чисел: {result}")
